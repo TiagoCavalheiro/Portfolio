@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- mantém -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- mantém -->
+    <title>Tiago Cavalheiro - Programmer & Developer</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      /* Garantir tamanho consistente para todos os ícones */
+      .skill-icon img { width: 60px; height: 60px; object-fit: contain; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">TC</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="name">Tiago Cavalheiro</span>
+                    </h1>
+                    <p class="hero-subtitle">Programmer & Web Developer</p>
+                    <p class="hero-description">
+                        Passionate about creating efficient solutions, integrating APIs, and developing full-stack applications. 
+                        Currently working as a Web Developer volunteer while pursuing my Professional Course in Computer Programming.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span class="window-dot"></span>
+                            <span class="window-dot"></span>
+                            <span class="window-dot"></span>
+                        </div>
+                        <div class="window-content">
+                            <div class="code-line"><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {</div>
+                            <div class="code-line indent">name: <span class="code-string">'Tiago Cavalheiro'</span>,</div>
+                            <div class="code-line indent">role: <span class="code-string">'Programmer'</span>,</div>
+                            <div class="code-line indent">passion: <span class="code-string">'Building amazing things'</span>,</div>
+                            <div class="code-line indent">status: <span class="code-string">'Always learning'</span></div>
+                            <div class="code-line">};</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        I'm a dedicated programmer with hands-on experience in web development and software engineering. 
+                        Currently pursuing a Professional Course in Computer Programming at Escola Secundária Amato Lusitano 
+                        while working as a Web Developer volunteer at VOST Portugal.
+                    </p>
+                    <p class="about-paragraph">
+                        My journey in programming started with a passion for problem-solving and creating efficient solutions. 
+                        I enjoy working with multiple programming languages and modern development tools, with expertise in 
+                        real-time data processing, database management, and full-stack development.
+                    </p>
+                    <p class="about-paragraph">
+                        When I'm not coding, I'm working on game development projects using Godot Engine, exploring new 
+                        technologies, or contributing to open-source projects. I believe in continuous learning and staying 
+                        updated with the latest industry trends.
+                    </p>
+                    <p class="about-paragraph">
+                        Looking ahead, I'm open to pursuing further studies at university or finding an exciting work opportunity 
+                        in the field that aligns with my passion for programming and technology. I'm eager to continue growing 
+                        as a developer and contribute to meaningful projects.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">17</div>
+                            <div class="stat-label">Years Old</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">Months Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Languages</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">💻</span>
+                        Programming Languages
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="javascript">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                            </div>
+                            <div class="skill-name">JavaScript</div>
+                        </div>
+                        <div class="skill-card" data-skill="python">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                            </div>
+                            <div class="skill-name">Python</div>
+                        </div>
+                        <div class="skill-card" data-skill="java">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+                            </div>
+                            <div class="skill-name">Java</div>
+                        </div>
+                        <div class="skill-card" data-skill="csharp">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" />
+                            </div>
+                            <div class="skill-name">C#</div>
+                        </div>
+                        <div class="skill-card" data-skill="cpp">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+                            </div>
+                            <div class="skill-name">C/C++</div>
+                        </div>
+                        <div class="skill-card" data-skill="php">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
+                            </div>
+                            <div class="skill-name">PHP</div>
+                        </div>
+                        <div class="skill-card" data-skill="html">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+                            </div>
+                            <div class="skill-name">HTML5</div>
+                        </div>
+                        <div class="skill-card" data-skill="css">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+                            </div>
+                            <div class="skill-name">CSS3</div>
+                        </div>
+                        <div class="skill-card" data-skill="mysql">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+                            </div>
+                            <div class="skill-name">MySQL</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">⚛️</span>
+                        Frameworks & Libraries
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="react">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+                            </div>
+                            <div class="skill-name">React</div>
+                        </div>
+                        <div class="skill-card" data-skill="leaflet">
+                            <div class="skill-icon">
+                                <img src="https://api.iconify.design/simple-icons:leaflet.svg?color=%23199900" alt="Leaflet.js" />
+                            </div>
+                            <div class="skill-name">Leaflet.js</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">🛠️</span>
+                        Tools & IDEs
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="vscode">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
+                            </div>
+                            <div class="skill-name">VS Code</div>
+                        </div>
+                        <div class="skill-card" data-skill="pycharm">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm" />
+                            </div>
+                            <div class="skill-name">PyCharm</div>
+                        </div>
+                        <div class="skill-card" data-skill="webstorm">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webstorm/webstorm-original.svg" alt="WebStorm" />
+                            </div>
+                            <div class="skill-name">WebStorm</div>
+                        </div>
+
+                        <!-- NetBeans atualizado: SVG oficial -->
+                        <div class="skill-card" data-skill="netbeans">
+                            <div class="skill-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="NetBeans" />
+                            </div>
+                            <div class="skill-name">NetBeans</div>
+                        </div>
+
+                        <div class="skill-card" data-skill="git">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+                            </div>
+                            <div class="skill-name">Git</div>
+                        </div>
+                        <div class="skill-card" data-skill="github">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+                            </div>
+                            <div class="skill-name">GitHub</div>
+                        </div>
+                        <div class="skill-card" data-skill="linux">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
+                            </div>
+                            <div class="skill-name">Linux</div>
+                        </div>
+                        <div class="skill-card" data-skill="godot">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg" alt="Godot" />
+                            </div>
+                            <div class="skill-name">Godot</div>
+                        </div>
+
+                        <!-- Cisco Packet Tracer: usar só o logo Cisco -->
+                        <div class="skill-card" data-skill="cisco">
+                            <div class="skill-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg" alt="Cisco" />
+                            </div>
+                            <div class="skill-name">Cisco</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <span class="category-icon">🌍</span>
+                        Languages
+                    </h3>
+                    <div class="languages-list">
+                        <div class="language-item">
+                            <span class="language-name">Portuguese</span>
+                            <div class="language-bar">
+                                <div class="language-progress" style="width: 100%"></div>
+                            </div>
+                            <span class="language-level">Native</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">English</span>
+                            <div class="language-bar">
+                                <div class="language-progress" style="width: 95%"></div>
+                            </div>
+                            <span class="language-level">C2/C1</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Spanish</span>
+                            <div class="language-bar">
+                                <div class="language-progress" style="width: 70%"></div>
+                            </div>
+                            <span class="language-level">B1-B2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Web Developer</h3>
+                        <span class="timeline-date">May 2025 – Present</span>
+                    </div>
+                    <div class="timeline-company">VOST Portugal</div>
+                    <div class="timeline-type">Volunteer | Castelo Branco, Portugal</div>
+                    <ul class="timeline-list">
+                        <li>Developed and maintained Discord bot using Python and JavaScript, integrating multiple APIs for enhanced functionality</li>
+                        <li>Contributed to FireScope project - a weather risk assessment application using Leaflet.js for mapping, with PostgreSQL and MariaDB for data management</li>
+                        <li>Implemented real-time data processing solutions and optimized database queries for improved performance</li>
+                        <li>Collaborated with team members on web security implementations and admin panel development</li>
+                        <li>Performed bug fixing, code optimization, and database management tasks</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title" style="margin-top: 4rem;">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Professional Course in Computer Programmer</h3>
+                        <span class="timeline-date">Sep 2023 – Present</span>
+                    </div>
+                    <div class="timeline-company">Escola Secundária Amato Lusitano</div>
+                    <div class="timeline-type">Level 4 QRQ</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🎮</div>
+                        <div class="project-badges">
+                            <span class="project-badge">In Development</span>
+                            <span class="project-badge">Team Project</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Decayed Haven</h3>
+                    <p class="project-subtitle">Metroidvania Game</p>
+                    <p class="project-description">
+                        Currently developing a Metroidvania adventure game where players explore a decaying hometown. 
+                        Actively working on game design, mechanics implementation, and level development using Godot Engine and GDScript.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Godot Engine</span>
+                        <span class="tech-tag">GDScript</span>
+                        <span class="tech-tag">Game Design</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-type">Final PAP Project</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🔥</div>
+                        <div class="project-badges">
+                            <span class="project-badge">Web App</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">FireScope</h3>
+                    <p class="project-subtitle">Weather Risk Assessment</p>
+                    <p class="project-description">
+                        A weather risk assessment application using Leaflet.js for interactive mapping, with PostgreSQL 
+                        and MariaDB for data management. Features real-time data processing and weather analysis.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Leaflet.js</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">MariaDB</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-type">VOST Portugal</span>
+                        <a href="https://firescope.vost.pt" target="_blank" rel="noopener noreferrer" class="project-link">Visit Site →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🤖</div>
+                        <div class="project-badges">
+                            <span class="project-badge">Bot</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Discord Bot</h3>
+                    <p class="project-subtitle">Multi-API Integration</p>
+                    <p class="project-description">
+                        Developed and maintained a Discord bot using Python and JavaScript, integrating multiple APIs 
+                        for enhanced functionality. Features real-time data processing and automated responses.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">API Integration</span>
+                        <span class="tech-tag">Discord.py</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-type">VOST Portugal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-description">
+                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+            </p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:tiagocavalheirowork@gmail.com">tiagocavalheirowork@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+351926823627">(+351) 926823627</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Castelo Branco, Portugal</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💻</div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/tiagocavalheiro" target="_blank" rel="noopener noreferrer">github.com/tiagocavalheiro</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Tiago Cavalheiro. All rights reserved.</p>
+            <p class="footer-note">Built with passion and dedication</p>
+        </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
