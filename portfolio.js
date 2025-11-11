@@ -304,7 +304,4 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Console message
-console.log('%c👋 Hello! Welcome to my portfolio.', 'font-size: 20px; font-weight: bold; color: #667eea;');
-console.log('%cIf you\'re interested in collaboration or have questions, feel free to reach out!', 'font-size: 14px; color: #666;');
 
